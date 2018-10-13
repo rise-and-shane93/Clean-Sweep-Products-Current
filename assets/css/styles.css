@@ -1,0 +1,398 @@
+/*---START SMALL SCREEN QUERY---*/
+/*====================
+CODE COMMON TO ALL PAGES
+====================*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*-----FONTS-----*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Assistant, sans-serif;
+  font-weight: 300;
+}
+
+/*-----NAVBAR-----*/
+
+.navbar-light .navbar-nav .nav-link {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/*-----UP-ARROW-----*/
+.up-arrow {
+  background-color: rgb(55,55,55);
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+.up-arrow i {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.up-arrow:hover {
+  background-color: rgb(0,0,0);
+  color: #fefefe;
+  box-shadow: 0px 5px 15px 0px #373737;
+  transition: .2s ease-in-out;
+}
+
+/*====================
+      HOME PAGE
+====================*/
+
+/*-----BUILDING BLOCK-----*/
+div.buildingblockphoto {
+  width: 100%;
+  min-height: 75vh;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0px 0px 5px black;
+}
+
+.buildingblock {
+  width: 100%;
+  min-height: 65vh;
+  background: #fefefe;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+div.fadedgraybox {
+  padding: 20px;
+  background: rgba(157,157,157,0.6);
+  margin: 30px;
+}
+
+.smallbuildingblock {
+  width: 100%;
+  background: #fefefe;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.buildingblocktitle {
+  width: 100%;
+  background: #fefefe;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*-----DOWN ARROW-----*/
+/*
+.down-arrow {
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: .3s;
+}
+.down-arrow:hover {
+  color: #fefefe;
+  font-weight: 900;
+}
+*/
+/*----------
+ARTICLE SWEEP CMPD
+----------*/
+#sweeping-compound .tab-pane {
+  height: 265px;
+}
+
+/*====================
+     ABOUT PAGE
+====================*/
+.CEOstatement {
+  border: 1px solid #373737;
+  width: 95%;
+  padding: 10px;
+  box-shadow: 0px 3px 3px 0px #373737;
+}
+
+/*====================
+SWEEPING COMPOUND PAGE
+====================*/
+img[src$="usda.png"] {
+  width: 75%;
+}
+#compound .nav-tabs .active,
+#compound .tab-content {
+  background-color: #F8F8FF;
+}
+.nav-tabs .active {
+  border-bottom: #DDD;
+}
+
+/*====================
+    CONTACT PAGE
+====================*/
+#contact-location .container {
+  position: relative;
+}
+#contact-location .nav-tabs .active,
+#contact-location .tab-content {
+  background-color: #F8F8FF;
+}
+#contact-location .nav-tabs .active {
+  border-bottom: #DDD;
+}
+
+/* .vl::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 5px;
+  background-color: #DDD;
+  position: absolute;
+  top: 0;
+  left: 58.3333333%;
+} */
+.mapouter {
+  text-align:right;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background :none!important;
+  height: 300px;
+  width: 100%;
+}
+/*Nav tabs*/
+.map span:first-child {
+  display: none;
+}
+
+
+#contact-location .tab-content {
+  border-bottom: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+}
+/* .vl::before {
+  content: "";
+  display: block;
+  width: 5px;
+  background-color: #DDD;
+  height: 100%;
+} */
+
+/*-----------
+FORM
+------------ */
+#name,
+#email,
+#subject,
+#message {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: block;
+  font-family: sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Open Sans', sans-serif;
+}
+form button {
+  font-family: 'Open Sans', sans-serif;
+  color: #EAE7DC;
+  font-weight: 900 !important;
+  border-radius: 10px !important;
+  width: 95% !important;
+}
+.form-submitted {
+  border: 5px solid green;
+  border-radius: 10px;
+  width: 100%;
+  color: green;
+  font-weight: 900;
+}
+.form-submitted p {
+  margin-bottom: 0 !important;
+  padding: 10px;
+}
+
+/*---END SMALL SCREEN QUERY---*/
+
+/*---START MEDIUM SCREEN QUERY---*/
+@media (min-width: 768px) {
+
+}
+/*---END MEDIUM SCREEN QUERY---*/
+
+/*---START LARGE SCREEN QUERY---*/
+@media (min-width: 1024px) {
+  /*====================
+  CODE COMMON TO ALL PAGES
+  ====================*/
+
+  /*-----UP-ARROW-----*/
+  .up-arrow {
+    background-color: white;
+    color: rgba(55,55,55,0.5);
+    border: 1px solid rgba(55,55,55,0.5);
+    width: 50px;
+    height: 50px;
+    bottom: 70px;
+    right: 55px;
+  }
+  .up-arrow i {
+    margin-bottom: 5px;
+    font-size: 35px;
+  }
+  .up-arrow:hover {
+    background-color: rgb(55,55,55);
+    color: #fefefe;
+    box-shadow: 0px 5px 15px 0px #373737;
+    transition: .2s ease-in-out;
+  }
+
+  /*====================
+        HOME PAGE
+  ====================*/
+
+  /*----------
+  ARTICLE PRIVATE LABEL
+  ----------*/
+  #private-label .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #private-label .carousel {
+    width: 55%;
+  }
+
+  /*====================
+        ABOUT PAGE
+  ====================*/
+
+  /* Diagonal stacked paper effect */
+  .CEOstatement {
+    background: #fff;
+    padding: 30px;
+    position: relative;
+    height: 647px;
+    width: 500px;
+  }
+  /* .statement h3,
+  .statement p {
+    color: transparent;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  } */
+  /* .CEOstatement .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 10;
+  }
+  .message button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  } */
+  
+  .CEOstatement,
+  .CEOstatement::before,
+  .CEOstatement::after {
+    /* Styles to distinguish sheets from one another */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+  }
+  
+  .CEOstatement::before,
+  .CEOstatement::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background-color: #eee;
+  }
+  
+  .CEOstatement::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+  }
+  
+  .CEOstatement::after {
+    top: 5px;
+    right: -5px;
+    transform: rotate(1deg);
+    z-index: -2;
+  }
+
+  /*====================
+  SWEEPING COMPOUND PAGE
+  ====================*/
+  .vl-row {
+    position: relative;
+  }
+  .vl-row-line::before {
+    content: "";
+    display: block;
+    height: 90%;
+    width: 1px;
+    background-color: #DDD;
+    position: absolute;
+    top: 5%;
+    left: 58%;
+  }
+  
+
+  /*====================
+       CONTACT PAGE
+  ====================*/
+  .vl::before {
+    content: "";
+    display: block;
+    height: 90%;
+    width: 1px;
+    background-color: #DDD;
+    position: absolute;
+    top: 5%;
+    left: 57.5%;
+  }
+
+  /*Nav tabs*/
+  .map span:first-child {
+    display: inline;
+  }  
+  .map span:nth-child(2) {
+    display: none;
+  }
+  
+}
+/*---END LARGE SCREEN QUERY---*/
