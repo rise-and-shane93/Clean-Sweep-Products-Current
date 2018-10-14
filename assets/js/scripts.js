@@ -25,6 +25,7 @@ on a link in the home page's nav tabs, it will
 then link them to the correct nav tab on the 
 sweeping compound page
 */
+/*
 //on index.html page
 var $tabLinkLessReg = $('.regular');
 
@@ -34,7 +35,7 @@ var $regPanelMore = $('#regPanelMore');
 $tabLinkLessReg.click(function() {
     $regPanelMore.addClass("active");
 });
-
+*/
 /*smooth scrolling
 this will be an arrow that appears just below
 'click to continue.' Upon click, it will smooth
